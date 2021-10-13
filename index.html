@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AI in Gaming</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<header><h1>AI in Gaming</h1>
+<p>By Tommy, Christian, & Bianca</p>
+</header>
+  </head>
+<br>
+<h2>Introduction</h2>
+<p>Video games are basically interactive media between users and computers. Which means that all video games need a system that has the ability to interact with humans. That is the first reason why AI systems are important in the video game industry. Secondly, video games are the best tools to test the ability of AI.
+We believe that AI is evolving through the video games and the game industry will change dramatically by the AI at the same time. We want to explore the AI’s potential in the video game industry and hidden opportunities.
+</p>
+<h2>Game AI</h2>
+<p>Usually refers to a broad set of algorithms, "automated computation" or a predetermined, limited set of responses to inputs.
+The most common example is controlling Non-playable Characters (NCP’s) including things like Boss Fights, conversations, following the player etc.
+NPC AI can be classified under two broad types: deterministic and non-deterministic.</p>
+<table>
+  <tr>
+    <th>Deterministic AI</th>
+    <th>Non-deterministic AI </th>
+  </tr>
+  <tr>
+    <td>the most commonly used AI in video games.
+These are hard-coded, specified, predictable, AI programs that are traditionally used in almost all games at some point.
+</td>
+    <td>more advanced/complex- exhibits some uncertainty when it comes to decision making. This type of AI could use neural networks, deep learning, or machine learning algorithms to change the way it behaves towards a player and based on past decisions of the player.
+</td>
+  </tr>
+</table>
+<br>
+<h2>Finite State Machine</h2>
+<p>Deterministic AI can be super simple if/then statements or it can include more complicated tools like Finite State Machine or the Monte Carlo Search Tree.
+Using these tools, you can make deterministic AI much more sophisticated and human-like.
+
+FSM algorithm is typically relatively simple AI.
+Game devs compile a list of all of the possible events/reactions a bot can experience and then assign specific responses to each situation.
+This is typically using if-then conditionals that check various conditions and criteria.
+
+To advance the simple algorithm of the FSM and make the actions less predictable game developers commonly use fuzzy logic in finite state machines.
+</p>
+<h2>Monte Carlo Tree Search</h2>
+<p>Another way to decrease predictability in the FSM is an algorithm called the Monte Carlo Tree Search (MCTS). This algorithm was created to prevent the repeatability aspect of the Finite State Machine. The MCTS’s goal is to find the best move from any given game state of any game.
+The way the it works is by first figuring out every one of the potential moves a bot or NPC has to make, for each move it considers all of the possible moves the player could make in response, it then breaks down each of the moves a player could react with, and considers all of it’s possible responding moves it could make in response, so on and so forth. (minimax)
+If the algorithm stopped here, it would take the computer would take forever processing every possible choice and every scenario possible for the entire game because of the vast choices an AI could be forced to make.
+To avoid this, the MCTS algorithm selects a handful of options and explores the future states for only the ones selected.
+</p>
+
+<h3>Use of AI in Video Games</h3>
+<p>The most common use of Game AI in video games is in controlling NPCs (deterministic AI)
+2 main means of control:
+</p>
+<ol>
+<li>controlling NPCs thru scripting (or decision trees)
+<br>currently the most common means of control
+<br>Is the most likely to lead to "artificial stupidity" (abnormal/repetitive behavior)</li>
+<li>pathfinding
+<br>widely used in real-time strategy games
+<br>method for determining how to get a bot from point A to point B on a map, considering terrain, obstacles, etc
+</li>
+</ol>
+<p>3 main methods of pathfinding with AI</p>
+<ol>
+<li>"grid-based pathfinding"- terrain is mapped onto a rigid grid of uniform squares and a pathfinding algorithm is applied</li>
+<li>using irregular polygons to create a navigation mesh out of the map areas</li>
+<li>manually selected "waypoints"</li>
+</ol>
+<h3>“Game AI” vs “Real AI”</h3>
+<p>
+Some say “Game AI” is  “Real AI”, some say its not AI at all.
+According to the Amrapali Group of Institutes “many experts in the field of AI have argued that video game AI is not true intelligence, but an advertising buzzword used to describe computer programs that use simple sorting and matching algorithms to create the illusion of intelligent behavior.”
+
+Often times- “Game AI” doesn’t constitute "true AI" because it doesn’t include things like decision-making, problem solving, machine learning etc.
+
+I personally think deterministic Game AI is not the traditional AI that we talk about in this class, and perhaps it a subset of “Real AI”.
+
+</p>
+<br>
+<h2>Future of AI & Video Games</h2>
+<h3>Level Design</h3>
+<p>AI can be used to make smarter enemies and the digital environment automatically.
+
+Since AI technologies are getting better, it will provide unique experiences to the players.
+
+Developers can test how their level design works by AI and achieve their goals with relatively little effort and time investment.
+
+</p>
+<h3>Realistic Interaction</h3>
+<p>
+All the video game developers have tried to create perfectly immersive virtual environments for many years. Therefore, video games have been improved with the technologies that trick players to feel the virtual worlds to another reality. AI has potential to achieve all the developers’ dreams by creating realistic interactions between virtual environments including NPCs and players.
+</p>
+<h4>We wish to explore the possible use of machine learning in game development, and explore what we can do to improve the current state machine type enemy AI in game development.
+</h4>
+<div class ="examples">
+<h2>State-of-the-Art</h2>
+<h3>Halo 2</h3>
+<p>Halo is a first person shooter game developed by Bungie and published by Microsoft Game Studios.
+Throughout the Halo series, you must fight “The Covenant”, an alliance of alien races. Their behaviour is reliant upon behaviour trees, the core element of the Halo AI infrastructure is behaviour trees.
+Each enemy type has its own AI behaviour which requires players to use different tactics based on the enemy type.
+The agency of a character in Halo is very large in comparison to most other first-person shooters therefore their behavior trees are very large in turn.
+<br><b>AI Tech:</b> behaviour trees, pathfinding<br>
+<b>Pros:</b> each enemy type has super detailed character traits and actions.<br>
+<b>Cons:</b> no machine learning, no long term decision making</p>
+<h3>Blade and Soul</h3>
+<p>‘Blade and Soul’ is an MMORPG inspired by realistic martial arts. One of the most famous modes of this game is ‘Battle Arena’. The Battle Arena is a ‘1 on 1 PVP system’ in Blade and Soul. NC Soft(A developer of Blade and Soul) applied AI technology to the Battle Arena to create enemies acting like humans. The goal of this experiment is to develop professional level battle AI. NC Soft applied this system to create enemies in ‘Infinite Challenge’ mode. Players can have unique battle experience because those enemies show different movements depending on the player character's action.
+<br>
+<br><b>AI Tech:</b> NC Soft used machine-learning technology to achieve their goal. AI of Blade and soul is taught by rewards. For example, if the AI beats the enemy, it gets some score depending on how much HP it left and what battle combos it used. In addition, this AI learns from the play data of professional Blade and Soul players. This is because the movement of characters that the professional players control is considered as the best learning material. Furthermore, this AI evolves through several battles with other AIs which have less time to learn the battle patterns than the test AI.
+<br><b>Pros:</b> One problem that PVP games have is that battles with AI are not fun. This is because after the players get used to the game, it is too easy to beat the AI. In Blade and Soul, however, players can fight with smart enemies and it will make them immersed in the game.
+
+<br><b>Cons:</b> There are still many problems in this system. First of all, AI enemies sometimes do not act properly. This is because the AI in a real-time battle game should react to the player character’s action immediately and calculate all the variables quickly. In this process, it shows various bugs. Therefore, the evaluation of this system is relatively negative.
+</p>
+<h3>World of Warcraft</h3>
+<p>Similar to other MMORPGs, the game allows players to create a character avatar and explore an open game world in third- or first-person view, exploring the landscape, fighting various monsters, completing quests, and interacting with non-player characters (NPCs) or other players. The game encourages players to work together to complete quests, enter dungeons and engage in player versus player (PvP) combat, however the game can also be played solo without interacting with others. The game primarily focuses on character progression, in which players earn experience points to level up their character to make them more powerful and buy and sell items using in-game currency to acquire better equipment, among other game systems.
+Purpose: Make a boss fight that keeps player engaged
+<br><b>AI Tech:</b> State machine
+<br><b>Pros:</b>Rewarding when player learned how to beat the boss Designers have more control over the boss
+<br><b>Cons:</b> Predictable
+</p>
+<br>
+<h3>Dark Soul</h3>
+<p>Dark Souls III is an action role-playing game played in a third-person perspective, similar to previous games in the series. According to lead director and series creator Hidetaka Miyazaki, the game's gameplay design followed "closely from Dark Souls II". Players are equipped with various weapons to fight against enemies, such as bows, throwable projectiles, and swords. Shields can act as secondary weapons, but they are mainly used to deflect enemies' attacks and protect the player from suffering damage. Each weapon has two basic types of attack, one being a standard attack and the other being slightly more powerful that can be charged up, similar to FromSoftware's previous game, Bloodborne. In addition, attacks can be evaded through dodge-rolling. Bonfires, which serve as checkpoints, return from previous instalments. Ashes, according to Miyazaki, play an important role in the game. Magic is featured in the game, with a returning magic system from Demon's Souls, now known as "focus points" (FP). When performing spells, the player's focus points are consumed. There are two types of Estus Flasks in the game, which can be allotted to fit a players' particular play style. One refills hit points like previous games in the series, while the other refills focus points, a feature new to the game. Combat and movements were made faster and more fluid than Dark Souls II. Several player movements are performed more rapidly, allowing more damage to be done in a shorter period.
+Purpose: Make a boss fight that keeps player engaged
+<br><b>AI Tech:</b> State machine
+<br><b>Pros:</b> Rewarding when player learned how to beat the boss Designers have more control over the boss
+<br><b>Cons:</b> Predictable
+</p>
+<br>
+<h3>Pac Man</h3>
+<p>Just last year, Nvidia produced a clone of 1980 maze game Pac-Man that was built entirely by AI.
+They trained the AI model, known as NVIDIA GameGAN, by showing it 50,000 episodes of Pac-Man gameplay.
+Nvidia’s GameGAN relies on neural networks, instead of a game engine, to create Pac-Man’s world.
+But usually, Pac Man just uses a fairly basic FSM (and other iterations include pathfinding).
+The Ghosts behavior is controlled through a Finite state machine.
+In those states,  the ghosts have 3 behaviours: 1. Chase 2. Scatter 3. Frightened
+The four different ghosts also have different personalities.
+<br><b>AI Tech:</b>  generative adversarial networks (GAN) (a common architecture used in machine learning made up of two competing neural networks, a generator and a discriminator.), FSM, pathfinding
+<br><b>Pros:</b> first AI model to emulate a game engine using GAN-based neural networks
+<br><b>Cons:</b> 50,000 episodes is a lot of hours for a seemingly simple game
+</p>
+<br>
+<h3>Middle-earth: Shadow of War</h3>
+<p>
+
+
+‘Middle-earth: Shadow of War’(hereafter ‘Middle-earth’) is an action RPG game based on the world of ‘The lord of the rings’. Middle-earth has a unique system called ‘Nemesis System’ which distinguishes ‘Middle-earth’ from other video games. The Nemesis system is an AI system of Orcs who are the enemies of this game. This mechanic creates the orcs’ personalities, relationship with the player’s character and also relationship between other orcs. The Nemesis system basically generates the boss orcs with names, titles and explanations of characteristics. It also creates the weakness and strength attributes of the orcs. Those orcs evolve based on the interaction with players. For example, if the player’s character(Talion) has run away from the battle, the boss orc will remember that moment and mention it when Talion meets the orc again. If Talion kills one of the boss orcs, some of them could come back(They are healed and fixed by other orcs according to the story) and the player will face the same enemy but stronger. The appearance of the orc who was killed previously changes as well as the difficulty of battle. For instance, if Talion kills one of the boss orc by cutting his head, the ocr will come back with a scar face and headpiece that bring to mind the history between Talion and the orc. In addition, players can make the orcs they beat into spies or comrades. Unlike other video games, however, spy orcs could betray Talion or enemy orcs can realize there are spies among them. Sometimes some orcs betray and kill other orcs in order to gain a higher position.
+
+<br><b>AI Tech:</b> The Nemesis system provides different gaming experiences depending on how each player treats the orcs. This system makes the players more immersed in the game because they can experience realistic enemies. The Nemesis system also can expand the play time of ‘Middle-earth’ with limited resources. To make play time longer, developers need to add various game sources and put in a lot of time and effort. However, players of this game can enjoy the same environment several times with different enemies. This system allows the developers to save the resources and time needed to design new enemies
+
+<br><b>Pros:</b> The orcs in ‘Middle-earth’ do not develop themselves by machine-learning technology. However, they perceive the players’ behaviors and react intelligently. Except for AI game machines created through machine-learning like AlphaGo and Deep Blue, the Nemesis system shows one of the most similar functions to AI that we consider definite AI.
+
+<br><b>Cons:</b> The Nemesis system has achieved its goal. However, the orcs created by the Nemesis system are not as fascinating as other boss enemies in AAA video games because those boss enemies are designed to provide perfect gaming experience even though players can be bored after beating them a few times.</p>
+<br>
+<br>
+</div>
+<br>
+<br>
+<p>You've reached the end- thanks for reading!</p>
+  <body>
+    <style>
+    body {padding:100px;
+          background-color:white;
+    }
+    .examples{
+      background-color:#c8c2bd;
+      padding:30px;
+      border: 10px black;
+      border-style: inset;
+    }
+    header{
+      text-align:center;
+      border: 5px gray;
+      border-style: inset;
+
+    }
+
+
+</style>
+</html>
